@@ -1,0 +1,70 @@
+.form-wrapper
+	margin: 15px auto
+	display: flex
+	justify-content: center
+	
+.input-wrap
+	position: relative
+	margin-bottom: 5px
+
+input
+	border: 1px solid grey
+	padding: 10px 15px
+.input-wrap 
+p.is-error
+  display: none
+p.is-valid
+	display: none
+.is-invalid >
+	p.is-error
+		color: #f00
+		display: block
+		border: none
+		position: absolute
+		left: 105%
+		bottom: 25%
+		white-space: nowrap
+  input
+    border: 1px solid #f00
+
+.is-valid >
+	p.is-valid
+		color: #0f0
+		display: block
+		border: none
+		position: absolute
+		left: 105%
+		bottom: 25%
+	input
+		border: 1px solid #0f0
+		position: relative
+.btn
+	position: relative
+	padding: 10px
+	border: 1px solid grey
+	outline: none
+	background: #fff
+	color: grey
+	text-transform: uppercase
+	cursor: pointer
+	z-index: 0
+	overflow: hidden
+	transition: all .5s ease .1s
+	width: 100%
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		content: ''
+		z-index: -1
+		width: 0
+		height: 100%
+		background: #000
+		transition: all .5s ease .1s
+	&:hover
+		&:before
+			width: 100%
+		color: #f00
+		border: 1px solid #f00
+.icon-check
+	fill: #0f0
