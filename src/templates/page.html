@@ -6,28 +6,28 @@ title: Index page
 {% block content %}
 <div class="form-wrapper">
 <form action="" method="POST" name="form-registration">
-	<div class="input-wrap">
+	<div class="form-wrapper__input-wrap">
 		<p class="is-valid">{{mixins.icon('check')}}</p>
 			<p class="is-error">Введите пожалуйста своё имя!</p>
 			<input placeholder="Name" type="text" name="name" class="req">
 	</div>
-	<div class="input-wrap">
+	<div class="form-wrapper__input-wrap">
 			<p class="is-valid">{{mixins.icon('check')}}</p>
 			<p class="is-error">Введите пожалуйста свою Фамилию</p>
 			<input placeholder="Surname" type="text" name="surname" class="req">
 	</div>
-	<div class="input-wrap">
+	<div class="form-wrapper__input-wrap">
 			<p class="is-error">Введите пожалуйста свой мобильный номер</p>
 			<p class="is-valid">{{mixins.icon('check')}}</p>
 			<input placeholder="(012)3456789" type="tel" name="phone" class="req"
-			pattern="[(-),0-9]{5}[0-9]{3}[0-9]{2}[0-9]{2}">
+			pattern="[(-),0-9]{5}[0-9]{7}">
 	</div>
-	<div class="input-wrap">
-			<p class="is-valid">{{mixins.icon('check')}}</p>
+	<div class="form-wrapper__input-wrap">
+			<p class ="is-valid">{{mixins.icon('check')}}</p>
 			<p class="is-error">Введите пожалуйста свой e-mail!</p>
 			<input placeholder="Email" type="email" name="email" class="req">
 	</div>
-	<div class="input-wrap">
+	<div class="form-wrapper__input-wrap">
 			<p class="is-valid">{{mixins.icon('check')}}</p>
 			<p class="is-error">Введите пожалуйста свой пароль!</p>
 			<input placeholder="Password" type="password" name="password" class="req">
